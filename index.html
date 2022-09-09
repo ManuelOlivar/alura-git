@@ -10,25 +10,33 @@
 </head>
 <body>
      <header>
-        <img src="imagenes/Logo-1.png" alt="Logo de alura con latra: a">
+        <li><img src="imagenes/Logo-1.png" alt="Logo de alura con latra: a"></li>
+        <li><h1>Encriptador por: Manuel Rene Olivar Miranda</h1></li>
      </header>
      <main>
         <section>
             <textarea class="input-texto"
                 cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
                 <div class="botones">
-                    <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
-                    <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <nav>
+                        <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </nav>
                 </div>
         </section>
         <section>
             <textarea class="mensaje" cols="18"
             rows="8"></textarea>
             <div class="botonCopiar">
-                <button class="copiar" onclick="btnCopiar()">Copiar</button>
+                <nav>
+                    <button class="copiar" onclick="btnCopiar()">Copiar</button>
+                </nav>
             </div>    
         </section>
      </main>
+     <footer>
+        <p class="copyright">&copyDerechos: Manuel Rene Olivar Miranda - 2022</p>
+    </footer>
 </body>
 <script src="script.js"></script>
 </html>

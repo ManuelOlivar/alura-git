@@ -9,6 +9,17 @@ body{
     background-color: #E5E5E5;
 }
 
+li{
+    display: inline-block;
+    /*text-align: center;*/
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px
+}
+
 main{
     display: flex;
     margin-left: 80px;
@@ -17,17 +28,19 @@ main{
 
 .input-texto{
     margin-top: 90px;
-color: #495057;
+    color: #495057;
+    border-radius: 10px;
 }
 
 .mensaje{
     position: relative;
     margin-top: 20px;
     margin-left: 90px;
-    background-image: url("imagenes/Muñeco.png");
+    background-image: url("imagenes/Muneco.png");
     background-repeat: no-repeat;
     background-position: 18px;
-    background-size: 300px
+    background-size: 300px;
+    border-radius: 10px;
 }
 
 .botonCopiar{
@@ -37,10 +50,12 @@ color: #495057;
 }
 
 .copiar{
-    margin-left: 30px;
+    margin-left: 50%;
+    border-radius: 10px;
 }
 
 .botones{
+    margin-left: 25%;
     display: flex;
     flex-direction: row ;
     margin-top: 20px;
@@ -48,12 +63,35 @@ color: #495057;
 .encriptar{
     background-color: darkblue;
     color: white;
+    border-radius: 10px;
 }
 
 .desencriptar{
     margin-left: 30px;
+    border-radius: 10px;
+}
+
+nav button:hover{/*captura movimiento de mause*/
+    color: #C78C19;
+    font-size: 40px;
+}
+
+nav :active{
+    border-color: #fd0c0c;
 }
 
 .informacion{
     font-size: 15px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #000000;
+    font-size: 13px;
+    margin: 20px;
 }
